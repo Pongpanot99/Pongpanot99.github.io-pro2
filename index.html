@@ -75,8 +75,7 @@
         object.traverse(function (child) {
           if (child.isMesh) {
             child.castShadow = true;
-            child.receiveShadow = false;
-            child.material.side = THREE.DoubleSide;
+            child.receiveShadow = true;
           }
         });
             scene.add(object);
